@@ -41,9 +41,15 @@ function randomColor() {
 }
 
 const btnGrid = document.querySelector('.btn-grid');
+let num = 8;
 
 btnGrid.addEventListener('click', () => {
-  let num = parseInt(prompt("What size grid would you like?"));
+  num = parseInt(prompt("What size grid would you like?"));
   createGrid(num);
 });
 
+const btnClear = document.querySelector('.btn-clear');
+
+btnClear.addEventListener('click', () => {
+  createGrid(num);
+});
