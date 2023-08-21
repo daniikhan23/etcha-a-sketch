@@ -78,6 +78,19 @@ button:hover {
   transition: all 0.3s ease-in;
 }
 
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  margin: -0.8rem;
+  margin-bottom: 5rem;
+}
+
+body {
+  background-color: lightblue;
+}
+
 .container {
   margin: auto 0;
 }
@@ -91,3 +104,4 @@ button:hover {
   border: 1px solid black;
   padding: 2rem;
 }
+
