@@ -1,9 +1,10 @@
+const container = document.createElement('div');
+container.className = 'container';
+document.body.appendChild(container);
+
 function createGrid(num) {
 
-  const container = document.createElement('div');
-  container.className = 'container';
-  document.body.appendChild(container);
-
+  container.innerHTML = '';
   // create rows
   for (let i = 0; i < num; i++) {
     const row = document.createElement('div');
