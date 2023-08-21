@@ -2,6 +2,23 @@ const container = document.createElement('div');
 container.className = 'container';
 document.body.appendChild(container);
 
+const btnGrid = document.querySelector('.btn-grid');
+let num = 8;
+
+btnGrid.addEventListener('click', () => {
+  num = parseInt(prompt("What size grid would you like?"));
+  createGrid(num);
+});
+
+const btnClear = document.querySelector('.btn-clear');
+
+btnClear.addEventListener('click', () => {
+  createGrid(num);
+});
+
+const para = document.querySelector('h2');
+para.textContent = `Grid Size: ${num}x${num}`;
+
 function createGrid(num) {
 
   container.innerHTML = '';
@@ -27,6 +44,7 @@ function createGrid(num) {
       (col);
     }
   }
+  para.textContent = `Grid Size: ${num}x${num}`;
 }
 
 createGrid(8);
@@ -40,16 +58,5 @@ function randomColor() {
   return color;
 }
 
-const btnGrid = document.querySelector('.btn-grid');
-let num = 8;
 
-btnGrid.addEventListener('click', () => {
-  num = parseInt(prompt("What size grid would you like?"));
-  createGrid(num);
-});
 
-const btnClear = document.querySelector('.btn-clear');
-
-btnClear.addEventListener('click', () => {
-  createGrid(num);
-});
