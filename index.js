@@ -3,6 +3,7 @@ container.id = 'container';
 document.body.appendChild(container);
 
 
+
 // create rows
 for (let i = 0; i < 16; i++) {
   const row = document.createElement('div');
