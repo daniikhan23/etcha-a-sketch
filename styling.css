@@ -78,16 +78,16 @@ button:hover {
   transition: all 0.3s ease-in;
 }
 
-#container {
+.container {
   margin: auto 0;
 }
 
-#row {
+.row {
   display: flex;
   justify-content: center;
 }
 
-#col {
+.col {
   border: 1px solid black;
   padding: 2rem;
 }
