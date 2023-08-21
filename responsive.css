@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .btn-container h2 {
+    font-size: 3rem;
+  }
+
+  .col {
+    border: 1px solid black;
+    padding: 2rem;
+  }
+}

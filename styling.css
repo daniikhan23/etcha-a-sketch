@@ -104,9 +104,9 @@ h1 {
 }
 
 .btn-container button {
-  padding: 0;
+  text-align: center;
+  padding: 1rem;
   margin-bottom: 1rem;
-  width: 12%;
   font-size: 2rem;
   color: white;
   background-color: #333;
